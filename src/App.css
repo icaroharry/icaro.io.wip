@@ -1,0 +1,29 @@
+.Grid {
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Navbar {
+  background: #00b09b;
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b); 
+  background: linear-gradient(to right, #96c93d, #00b09b);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+  height: 10px;
+  min-height: 10px;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+}
+
+.Col {
+  height: calc(100vh - 10px);
+  text-align: center;
+}
+
+.first {
+  background: #242e33;
+  border-left: none;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}

@@ -1,0 +1,12 @@
+.avatar {
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+  margin-top: 20px;
+
+  border: double 4px transparent;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #00b09b, #96c93d);;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
