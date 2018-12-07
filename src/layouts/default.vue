@@ -1,5 +1,6 @@
 <template lang="pug">
   q-layout(view="hHh lpr fFf").main-layout
+    q-scroll-observable(@scroll="userHasScrolled")
     q-layout-header(reveal :reveal-offset="400").main-header.bg-primary.no-shadow.row.items-start.justify-center
       q-toolbar(color="primary").justify-between.items-start.col-md-12.col-xl-6
         div.row.name.q-ml-sm Ícaro Harry
@@ -12,6 +13,8 @@
             q-icon(name="mdi-linkedin")
           q-btn(round color="tertiary" @click="openURL('https://twitter.com/icaroharry')").no-shadow.q-ml-xl
             q-icon(name="mdi-twitter")
+        div.bike.justify-start
+          q-icon(name="mdi-bike" color="white" size="25px", :style="{ marginLeft: scrollPosition + 'px'}")
       .bg-white.row.justify-center.main-tabs.shadow-5
         q-tabs(inverted align="justify").col-md-12.col-xl-6
           q-tab(default slot="title" label="About" name="tab-1" icon="person")
@@ -30,9 +33,15 @@ import { openURL } from 'quasar'
 export default {
   name: 'LayoutDefault',
   data () {
+    return {
+      scrollPosition: 0
+    }
   },
   methods: {
-    openURL
+    openURL,
+    userHasScrolled (scroll) {
+      this.scrollPosition = scroll.position
+    }
   }
 }
 </script>
@@ -43,15 +52,18 @@ body
 
 .main-layout
   .q-layout-header.main-header
-    height 400px
+    height 420px
 
   .name
     font-family 'Schoolbell', cursive
     font-weight 600
     font-size 25px
 
+  .bike
+    margin-top 22px
+    width 100%
+
   .main-tabs
-    margin-top 20px
     width 100%
 
   .avatar-place

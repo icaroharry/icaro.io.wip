@@ -1,30 +1,13 @@
 <template>
   <q-page class="flex flex-center">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
+    <div class="test"></div>
   </q-page>
 </template>
 
 <style>
+  .test {
+    height: 2000px;
+  }
 </style>
 
 <script>
