@@ -47,14 +47,21 @@ module.exports = function (ctx) {
     // framework: 'all' --- includes everything; for dev only!
     framework: {
       components: [
+        'QCard',
+        'QCardMain',
         'QLayout',
         'QLayoutHeader',
         'QLayoutDrawer',
         'QPageContainer',
         'QPage',
+        'QStepper',
+        'QStepperNavigation',
+        'QStep',
         'QTabs',
         'QRouteTab',
         'QTabPane',
+        'QTimeline',
+        'QTimelineEntry',
         'QToolbar',
         'QToolbarTitle',
         'QBtn',
